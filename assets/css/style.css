@@ -1,7 +1,9 @@
 body{
     font-family: 'Quantico';
-    padding-top: 50px;
+    padding-top: 60px;
     margin: 0%;
+    background-color: #1f1e22;
+    color: #fff;
 }
 
 .nav {
@@ -9,9 +11,9 @@ body{
     justify-content: space-between;
     padding: 0px 80px;
     align-items: center;
-    background-color: #00828b;
+    background-color: #2e2e38;
     color: #fff;
-    height: 50px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -25,7 +27,7 @@ body{
 }
 
 .nav img {
-    width: 30px;
+    height: 15px;
 }
 
 .nav-link {
@@ -37,8 +39,11 @@ body{
 .nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #f7630c;
 }
 
 /* Hamburger Menu */
@@ -68,7 +73,7 @@ body{
             height: 100vh;
             width: 50%;
             padding: 30px;
-            background-color: #e2e2e1;
+            background-color: #2e2e38;
             flex-direction: column;
             text-align: center;
             justify-content: start;
@@ -81,14 +86,14 @@ body{
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #000000;
+            color: #ffffff;
             font-weight: bold;
             font-size: 15px;
             margin-bottom: 20px;
             text-align: left;
         }
         .nav a{
-            color: #000000;
+            color: #ffffff;
         }
         .nama-profile h3{
             margin: 0%;
@@ -120,3 +125,4 @@ body{
         }
     }
 /* End Responsif */
+
