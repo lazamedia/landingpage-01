@@ -106,7 +106,11 @@
 }
 .c-kategori img {
     width: 80px;
+    height: 80px;
+    object-fit: contain;
     margin: 0%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .c-kategori h4 {
     margin: 2px;
@@ -118,6 +122,8 @@
     flex-direction: column;
     align-items: center;
     padding: 7px;
+    height: 100px;
+    align-content: flex-end;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #3d3d3d8c;
     transition: 0.3s;
@@ -365,87 +371,106 @@
 /* End Produk */
 
 
-/* footer */
-.c-footer{
+/* Contact */
+.c-contact{
     width: 100%;
-    background-color: #2b2727;
     padding: 30px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    min-height: 300px;
     align-content: center;
     align-items: center ;
-    border-top: 1px solid #f1f1f1;
-}
-.c-footer h3{
-    margin: 0;
-    color: #f7630c;
-    margin-top: 20px;
-}
-.footer-tengah{
     text-align: center;
-    align-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
-.c-footer ul{
-    list-style: none;
-    padding: 0;
+.h-contact h4{
     margin: auto;
-    text-align: left;
+    color: #ec2323;
 }
-.c-footer li a{
-    margin: 5px 0;
-    text-decoration: none;
-    color: #f1f1f1;
-    font-size: 12pt;
+.h-contact h1 {
+    margin: auto;
 }
-.c-footer li a:hover{
-    color: #f7630c;
+.c-contact p {
+    margin: auto;
 }
-.footer-box{
-    width: 30%;
-    padding: 30px;
-    box-sizing: border-box;
+
+.c-box-contact {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-kiri, .contact-kanan {
+    border-radius: 8px;
+}
+
+.contact-kiri {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.contact-kanan form {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box ;
+    width: 450px;
 }
-.footer-box img{
-    width: 150px;
-    margin-bottom: 20px;
-}
-.footer-box p{
+
+.contact-kanan form input,
+.contact-kanan form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #d94e08;
+    background-color: #2b2727;
+    color: white;
+    border-radius: 4px;
     font-size: 10pt;
 }
-.sosmed{
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    margin: 10px; 
+.contact-kanan form input:focus,
+.contact-kanan form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px 5px rgba(247, 98, 12, 0.397);
 }
-.sosmed a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14pt;
+.contact-kanan form textarea {
+    resize: none;
+    height: 150px;
 }
+
+.contact-kanan form button {
+    padding: 0.8rem;
+    border: none;
+    background-color: #f7630c;
+    color: #2b2727;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #d94e08;
+}
+
+.contact-kanan form button:hover {
+    background-color: #2b2727;
+    border: 1px solid #d94e08;
+    color: #f7630c;
+    
+}
+
 @media (max-width: 768px) {
-    .c-footer{
+    .c-box-contact {
         flex-direction: column;
     }
-    .footer-box{
+    .contact-kiri, .contact-kanan {
         width: 100%;
-        align-items: center;
-        text-align: center;
     }
-    .footer-box{
-        padding: 10px 40px;
+    .contact-kiri{
+        height: 300px;
     }
-    .footer-box ul{
-        justify-content: center;
-        text-align: center;
-    }
-    .sosmed{
-        justify-content: center;
+    .contact-kanan form {
+        width: 100%;
+        padding: 0px;
     }
 }
-/* End footer */
